@@ -1,12 +1,14 @@
  <!DOCTYPE html>
  <html>
  <head>
+ 	<meta charset="utf-8">
  	<title></title>
  </head>
  <body>
- 	<?php 
-		$URL = $_GET['URL'];
-		echo "<a href='$URL'title='Нажмите для перехода на сайт'> Нажмите для перехода на сайт </a>";
-	 ?>
+ 	<?php
+ 		$url=$_GET['url'];
+ 	?>
+
+ 	<a href="<?php echo $url ?>"</a>
  </body>
  </html>
