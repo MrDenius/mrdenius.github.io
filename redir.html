@@ -6,7 +6,23 @@
 </head>
 <body>
     <script>
-        window.location.href = "https://vk.com"
+        const strGET = window.location.search.replace( '?', ''); 
+        let params = window
+            .location
+            .search
+            .replace('?','')
+            .split('&')
+            .reduce(
+                function(p,e){
+                    var a = e.split('=');
+                    p[ decodeURIComponent(a[0])] = decodeURIComponent(a[1]);
+                    return p;
+                },
+                {}
+            );
+
+
+        window.location.href = "http://b91466et.beget.tech/api/VKRemMen/?" + strGET
     </script>
 </body>
 </html>
